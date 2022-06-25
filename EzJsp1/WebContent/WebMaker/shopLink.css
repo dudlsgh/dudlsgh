@@ -1,0 +1,823 @@
+@charset "UTF-8";
+
+*{
+
+       font-family: 'Noto Sans KR', sans-serif;
+
+       list-style:none;
+
+       text-decoration: none;
+
+       border-collapse: collapse;
+
+       margin:0px;
+
+       padding:0px;
+
+       color:#000;
+
+    
+
+    }
+    
+    #input{
+    width:300px;
+    height:50px;
+    
+    }
+    
+
+    /*전체 기본 설정*/
+
+h1{
+
+       font-size:48px;
+
+       font-weight:100;
+
+    }
+
+
+.contents1{
+
+	   font-size:20px;
+
+	   font-weight:lighter;
+
+}
+
+.contents2{
+
+  font-size: 18px;
+
+}
+
+.contents3 {
+
+  font-size: 14px;
+
+  font-weight: 100;
+
+}
+
+.contents1_bold{
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+}
+
+ 
+
+/*공통요소*/
+
+    .result{
+
+	    font-size:24px;
+
+    }
+
+    .intro_bg{
+
+        background-image:url("image/pen2.png");
+
+         width:1920px;
+
+         height:718px;
+
+    }
+
+    .header{
+
+         display:flex;
+
+         width:1280px;
+
+         margin:auto;
+
+         height:86px;
+
+    
+
+    }
+
+    .searchArea{
+
+          width:300px;
+
+          height:40px;
+
+          border-radius:5px;
+
+          margin-top:24px;
+
+    }
+
+    .searchArea>form>input{
+
+          border:none;
+
+          width:250px;
+
+          height:40px;
+
+          background:rgba(0,0,0,0.0);
+
+          color:#fff;
+
+          padding-left:10px;
+
+    }
+
+    .searchArea>form>span{
+
+           width:50px;
+
+           color:#fff;
+
+           font-weight:bold;
+
+           cursor:pointer;
+
+    }
+
+.nav{
+
+         display:flex;
+
+        justify-content:flex-end;
+
+         line-height: 86px;
+
+         width:980px;	
+
+         color:#fff;
+         margin-top:20px;
+
+    }
+    .nav>li{
+    margin-left:14px;
+    text-align:center;
+    }
+
+    .nav>li>div{
+
+          
+          
+          cursor: pointer;
+          white-space: nowrap;
+          position: relative;
+          width: 100px;
+          height: 70px;
+          line-height: 70px;
+          font-weight: bold;
+
+    }
+    .nav>li>div>p{
+          color:#fff;
+          display: block;
+          font-weight:bold;
+
+    }
+   .nav>li>div:after,
+   .nav>li>div:before,
+   .nav>li>div>p:before,
+   .nav>li>div>p:after{
+  content: ""; 
+  display: block;
+  position: absolute; 
+  background: #ff5157;
+  transition: 0.2s all ease;
+}
+.nav>li>div:after,
+.nav>li>div:before{width: 0%; height: 3px;}  
+
+.nav>li>div>p:before,
+.nav>li>div>p:after{ width:3px; height: 0%;}
+  
+.nav>li>div>p:before{left: 0;bottom: 1px;}
+.nav>li>div>p:after{right: 0;top: -1px;}
+.nav>li>div:after{top: -1px;}
+.nav>li>div:before { bottom: -1px; right: 0;}
+
+.nav>li>div:hover:after,
+.nav>li>div:hover:before {width: 100%;}
+
+.nav>li>div:hover p:before,
+.nav>li>div:hover> p:after {height: 100%;}
+
+.nav>li>div:hover>p:after {transition-delay: 0.2s;}
+.nav>li>div:hover:before {transition-delay: 0.4s;}
+.nav>li>div:hover>p:before {transition-delay: 0.6s;}
+
+.nav>li>ul{
+	opacity:0;
+	color:#fff;
+}
+.nav>li>ul>li>a{
+	color:#fff;
+}
+.nav>li:hover>ul{
+	opacity:1;
+	border: 1px solid #fff;
+}
+
+
+    .intro_txt{
+
+          width:100%;
+
+          margin:251px auto 211px auto;
+
+          text-align:center;
+
+    }
+
+    .intro_txt>h1,
+
+    .intro_txt>h4{
+
+          color:#fff;
+
+    }
+
+   
+    
+
+    /*main시작*/
+
+    
+
+    .main_txt1{
+
+        width:100%;
+
+        height:1000px;
+
+        margin-top:-132px;
+
+        background:#fff;
+
+    }
+
+    .main_txt1>h1{
+
+        padding-top:106px;
+
+        text-align:center;
+
+    }
+    
+    /*교보 시작*/
+    
+    .main_txt1>.kyobo{
+         width:550px;
+         height:50px;
+          margin: auto;
+          margin-top:40px;
+    
+    
+    }
+    
+    
+    .main_txt1>.kyobo>.kyoboBtn{
+
+          width:520px;
+
+          height:40px;
+
+          background:#fff;
+
+          border-radius:5px;
+          
+          border:1px solid #6fadcf;
+          outline:none;
+          box-shadow: none;
+          
+          
+           text-align:left;
+
+    }
+    
+    .main_txt1>.kyobo>.kyoboBtn>.content*{
+           vertical-align: middle;
+    }
+    
+    .main_txt1>.kyobo>.kyoboBtn>.kyobo_img{
+           width:100px;
+           height:40px;
+           
+    }
+    
+    
+    .main_txt1>.kyobo>.kyoboBtn>.kyobo_img>img{
+           width:80px;
+           height:30px;
+            vertical-align: middle;
+            margin-bottom:15px;
+          
+           
+    }
+    
+    
+    
+
+     .main_txt1>.kyobo>.kyoboBtn>.kyoboSp1{
+
+           width:50px;
+
+           color:#6fadcf;
+
+           font-weight:bold;
+
+          padding-left:10px;
+          padding-right:15px;
+          border-right:1px solid #00ffff;
+          
+
+    }
+    
+    
+     .main_txt1>.kyobo>.kyoboBtn>.kyoboSp2{
+
+          border:none;
+
+          width:400px;
+
+          height:40px;
+
+          background:rgba(0,0,0,0.0);
+
+          color:#6fadcf;
+          
+          padding-left:80px;
+
+    }
+    
+    /*알라딘 시작*/
+    
+    
+    .main_txt1>.aladin{
+         width:550px;
+         height:50px;
+          margin: auto;
+          margin-top:10px;
+    
+    
+    }
+    
+    
+    .main_txt1>.aladin>.aladinBtn{
+
+          width:520px;
+
+          height:40px;
+
+          background:#fff;
+
+          border-radius:5px;
+          
+          border:1px solid #6fadcf;
+          outline:none;
+          box-shadow: none;
+          
+          
+           text-align:left;
+
+    }
+    
+    .main_txt1>.aladin>.aladinBtn>.content*{
+           vertical-align: middle;
+    }
+    
+    .main_txt1>.aladin>.aladinBtn>.aladin_img{
+           width:100px;
+           height:40px;
+           
+    }
+    
+    
+    .main_txt1>.aladin>.aladinBtn>.aladin_img>img{
+           width:80px;
+           height:30px;
+            vertical-align: middle;
+            margin-bottom:5px;
+          
+           
+    }
+    
+    
+    
+
+     .main_txt1>.aladin>.aladinBtn>.aladinSp1{
+
+           width:50px;
+
+           color:#6fadcf;
+
+           font-weight:bold;
+
+          padding-left:10px;
+          padding-right:27px;
+          border-right:1px solid #00ffff;
+          
+
+    }
+    
+    
+     .main_txt1>.aladin>.aladinBtn>.aladinSp2{
+
+          border:none;
+
+          width:400px;
+
+          height:40px;
+
+          background:rgba(0,0,0,0.0);
+
+          color:#6fadcf;
+          
+          padding-left:80px;
+
+    }
+    
+    /*영풍문고 시작*/
+    
+    .main_txt1>.yp{
+         width:550px;
+         height:50px;
+          margin: auto;
+          margin-top:10px;
+    
+    
+    }
+    
+    
+    .main_txt1>.yp>.ypBtn{
+
+          width:520px;
+
+          height:40px;
+
+          background:#fff;
+
+          border-radius:5px;
+          
+          border:1px solid #6fadcf;
+          outline:none;
+          box-shadow: none;
+          
+          
+           text-align:left;
+
+    }
+    
+    .main_txt1>.yp>.ypBtn>.content*{
+           vertical-align: middle;
+    }
+    
+    
+    .main_txt1>.yp>.ypBtn>.yp_img{
+           width:100px;
+           height:40px;
+           
+    }
+    
+    
+    .main_txt1>.yp>.ypBtn>.yp_img>img{
+           width:80px;
+           height:30px;
+            vertical-align: middle;
+            margin-bottom:5px;
+          
+           
+    }
+    
+    
+    
+
+     .main_txt1>.yp>.ypBtn>.ypSp1{
+
+           width:50px;
+
+           color:#6fadcf;
+
+           font-weight:bold;
+
+          padding-left:10px;
+          padding-right:15px;
+          border-right:1px solid #00ffff;
+          
+
+    }
+    
+    
+     .main_txt1>.yp>.ypBtn>.ypSp2{
+
+          border:none;
+
+          width:400px;
+
+          height:40px;
+
+          background:rgba(0,0,0,0.0);
+
+          color:#6fadcf;
+          
+          padding-left:80px;
+
+    }
+    
+    /*yes24 시작*/
+
+    .main_txt1>.yes24{
+         width:550px;
+         height:50px;
+          margin: auto;
+          margin-top:10px;
+    
+    
+    }
+    
+    
+    .main_txt1>.yes24>.yes24Btn{
+
+          width:520px;
+
+          height:40px;
+
+          background:#fff;
+
+          border-radius:5px;
+          
+          border:1px solid #6fadcf;
+          outline:none;
+          box-shadow: none;
+          
+          
+           text-align:left;
+
+    }
+    
+    .main_txt1>.yes24>.yes24Btn>.content*{
+           vertical-align: middle;
+    }
+    
+    
+    .main_txt1>.yes24>.yes24Btn>.yes24_img{
+           width:100px;
+           height:40px;
+           
+    }
+    
+    
+    .main_txt1>.yes24>.yes24Btn>.yes24_img>img{
+           width:80px;
+           height:30px;
+            vertical-align: middle;
+          
+           
+    }
+    
+    
+    
+
+     .main_txt1>.yes24>.yes24Btn>.yes24Sp1{
+
+           width:50px;
+
+           color:#6fadcf;
+
+           font-weight:bold;
+
+          padding-left:12px;
+          padding-right:28px;
+          border-right:1px solid #00ffff;
+          
+
+    }
+    
+    
+     .main_txt1>.yes24>.yes24Btn>.yes24Sp2{
+
+          border:none;
+
+          width:400px;
+
+          height:40px;
+
+          background:rgba(0,0,0,0.0);
+
+          color:#6fadcf;
+          
+          padding-left:80px;
+
+    }
+    
+    /*인터파크 시작*/
+
+    .main_txt1>.inter{
+         width:550px;
+         height:50px;
+          margin: auto;
+          margin-top:10px;
+    
+    
+    }
+    
+    
+    .main_txt1>.inter>.interBtn{
+
+          width:520px;
+
+          height:40px;
+
+          background:#fff;
+
+          border-radius:5px;
+          
+          border:1px solid #6fadcf;
+          outline:none;
+          box-shadow: none;
+          
+          
+           text-align:left;
+
+    }
+    
+    .main_txt1>.inter>.interBtn>.content*{
+           vertical-align: middle;
+    }
+    
+    
+    .main_txt1>.inter>.interBtn>.inter_img{
+           width:100px;
+           height:40px;
+           
+           
+    }
+    
+    
+    .main_txt1>.inter>.interBtn>.inter_img>img{
+           width:80px;
+           height:30px;
+           
+            margin-bottom:5px;
+            vertical-align: middle;
+          
+           
+    }
+    
+    
+    
+
+     .main_txt1>.inter>.interBtn>.interSp1{
+
+           width:50px;
+
+           color:#6fadcf;
+
+           font-weight:bold;
+
+          padding-left:10px;
+          padding-right:15px;
+          border-right:1px solid #00ffff;
+          
+
+    }
+    
+    
+     .main_txt1>.inter>.interBtn>.interSp2{
+
+          border:none;
+
+          width:400px;
+
+          height:40px;
+
+          background:rgba(0,0,0,0.0);
+
+          color:#6fadcf;
+          
+          padding-left:80px;
+
+    }
+    
+    /*G마켓 시작*/
+
+    .main_txt1>.gmarket{
+         width:550px;
+         height:50px;
+          margin: auto;
+          margin-top:10px;
+    
+    
+    }
+    
+    
+    .main_txt1>.gmarket>.gmarketBtn{
+
+          width:520px;
+
+          height:40px;
+
+          background:#fff;
+
+          border-radius:5px;
+          
+          border:1px solid #6fadcf;
+          outline:none;
+          box-shadow: none;
+          
+          
+           text-align:left;
+
+    }
+    
+    .main_txt1>.gmarket>.gmarketBtn>.content*{
+           vertical-align: middle;
+    }
+    
+    
+    .main_txt1>.gmarket>.gmarketBtn>.gmarket_img{
+           width:100px;
+           height:40px;
+           
+           
+    }
+    
+    
+    .main_txt1>.gmarket>.gmarketBtn>.gmarket_img>img{
+           width:80px;
+           height:30px;
+           
+            margin-bottom:5px;
+            vertical-align: middle;
+          
+           
+    }
+    
+    
+    
+
+     .main_txt1>.gmarket>.gmarketBtn>.gmarketSp1{
+
+           width:50px;
+
+           color:#6fadcf;
+
+           font-weight:bold;
+
+          padding-left:12px;
+          padding-right:29px;
+          border-right:1px solid #00ffff;
+          
+
+    }
+    
+    
+     .main_txt1>.gmarket>.gmarketBtn>.gmarketSp2{
+
+          border:none;
+
+          width:400px;
+
+          height:40px;
+
+          background:rgba(0,0,0,0.0);
+
+          color:#6fadcf;
+          
+          padding-left:80px;
+
+    }
+ 
+
+    .footer{
+
+      display: flex;
+
+      background: #f1f1f1;
+
+      padding:30px;
+
+    }
+
+    .footer > div:first-child {
+
+      flex:3;
+
+      text-align: center;
+
+      color: pink;
+
+    }
+
+    .footer > div:last-child {
+
+      flex:9;
+
+      color: pink;
+
+    }
